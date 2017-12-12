@@ -1,0 +1,23 @@
+{
+  "name": "tennenbaum",
+  "version": "1.0.0",
+  "description": "tennenbaum theme refresh",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gonzo427/tennenbaum.git"
+  },
+  "keywords": [
+    "responsive",
+    "theme"
+  ],
+  "author": "Tiffany Sevareid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gonzo427/tennenbaum/issues"
+  },
+  "homepage": "https://github.com/Gonzo427/tennenbaum#readme"
+}
