@@ -37,6 +37,25 @@ define('DB_CHARSET', 'utf8');
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 
+/* THESE ARE THE SETTINGS FOR SITE HOSTED ON TIFFANYSEVAREID.COM
+define('DB_NAME', 'tennenbaum_tiffanysevare');
+
+/** MySQL database username */
+//define('DB_USER', 'tennenbaumtiffan');
+
+/** MySQL database password */
+//define('DB_PASSWORD', 'rPvQP^da');
+
+/** MySQL hostname */
+//define('DB_HOST', 'mysql.tennenbaum.tiffanysevareid.com');
+
+/** Database Charset to use in creating database tables. */
+//define('DB_CHARSET', 'utf8');
+
+/** The Database Collate type. Don't change this if in doubt. */
+//define('DB_COLLATE', '');
+
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *
