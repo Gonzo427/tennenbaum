@@ -124,6 +124,9 @@ function tennenbaum_capital_scripts() {
 	wp_enqueue_script( 'tennenbaum-capital-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	wp_enqueue_style("bootstrap", "//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css");
+	
+	wp_enqueue_style("tb-styles", get_template_directory_uri() . '/css/styles.css', array() );
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

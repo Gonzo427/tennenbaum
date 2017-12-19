@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,IAAI;EACH,WAAW,EAHI,qBAAqB;EAIpC,SAAS,EAAE,IAAI",
+"sources": ["../scss/_fonts.scss"],
+"names": [],
+"file": "styles.css"
+}
