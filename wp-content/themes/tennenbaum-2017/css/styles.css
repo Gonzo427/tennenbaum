@@ -1,0 +1,19 @@
+/* top menu nav style */
+.main-navigation {
+   /* li {
+        // Call links mixin to set link styles
+        @include links($menu-items-color, $menu-items-color-hover);
+    }
+    .current-menu-item,
+    .current-menu-ancestor,
+    .current_page_item,
+    .current_page_ancestor {
+	    a {
+	        color: $menu-items-color-active;
+	    }
+	}*/ }
+  .main-navigation ul.nav-menu {
+    border-top: 0 !important;
+    border-bottom: 0; }
+
+/*# sourceMappingURL=styles.css.map */
