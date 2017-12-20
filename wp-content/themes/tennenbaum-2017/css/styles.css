@@ -13,7 +13,11 @@
 	    }
 	}*/ }
   .main-navigation ul.nav-menu {
-    border-top: 0 !important;
+    border-top: 0;
     border-bottom: 0; }
+
+#masthead hgroup {
+  display: flex;
+  justify-content: space-between; }
 
 /*# sourceMappingURL=styles.css.map */
