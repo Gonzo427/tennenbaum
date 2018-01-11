@@ -1,0 +1,87 @@
+/*
+ Misc. stylings. E.G. body & links. 
+ You can nest styles to follow the HTML hierarchy
+*/
+ *{
+    box-sizing: border-box;
+ }
+body {
+    
+    color: $black;
+    height: 100%;
+    &.custom-font-enabled{
+        font-family: 'Lato', sans-serif;
+    }
+    /* Call gradient mixin to set background color with a gradient */
+    //@include gradient(top, $green-light, $content-background-color);
+
+    .home .site{
+        margin-top: 40px;
+    }
+    .site {
+        background-color: $white;
+    	box-shadow:none;  
+    }
+
+
+    .site-content {
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: .8px;
+		@media screen and (min-width: 900px){
+            float: right;
+        }
+        @media screen and (min-width: 600px) and (max-width: 899px){
+            float: none;
+            width: 100%;
+            margin: 3.75rem 0 0;
+        }
+        article {
+			
+		}
+	}
+}
+
+body.custom-background, body {
+    background-color: $white !important;
+}
+
+/* Call links mixin to set link styles */
+//@include links();
+
+/* Set background color of form inputs */
+button,
+input,
+textarea {
+	background-color: $gray-light;
+}
+button.back-to-team{
+    padding: 10px;
+    width: 90px;
+    text-align: center;
+    background-color: $blue-dark;
+    border-radius: 0;
+    border: 0;
+    a{
+        color: $white;
+        font-weight: 100;
+        text-decoration: none;
+        letter-spacing: .8px;
+    }
+    &:hover{
+        background-color: $blue-medium;
+        background-image: none;
+        color: $blue-dark;
+    }
+}
+/* Make images responsive */
+img{
+    width: 100%;
+    height: auto;
+    max-width: min-content;
+}
+
+.entry-content img{
+    border-radius:0;
+    box-shadow:none;
+}

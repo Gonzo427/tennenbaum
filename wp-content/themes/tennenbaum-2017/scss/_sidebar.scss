@@ -1,0 +1,31 @@
+@import "_variables.scss";
+.widget-area{
+	@media screen and (min-width: 600px){
+		float: left;
+		width: 32%;
+		margin: 0;
+	}
+	@media screen and (min-width: 600px) and (max-width: 899px){
+            float: none;
+            width: 100%;
+        }
+	text-align: center;
+	
+
+	#light-blue, #dark-blue{
+		padding: 40px 35px;
+	    margin: 20px 0;
+	    color: white;
+	    text-align: center;
+	    text-transform: uppercase;
+	    font-size: 16px;
+	    letter-spacing: .75px;
+	    line-height: 24px;
+	}
+	#light-blue{
+		background: $blue-medium;
+	}
+	#dark-blue{
+		background: $blue-dark;
+	}
+}

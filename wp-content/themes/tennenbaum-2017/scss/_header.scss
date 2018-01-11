@@ -1,6 +1,99 @@
+@import "_mixins.scss";
+@import "_variables.scss";
+.home{
+    #masthead{
+        background-image: none;
+        height: 100vh;
+        border-bottom: 0px;
+        box-shadow: none;
+        hgroup{
+           @media screen and (max-width: 599px){
+                position: absolute; 
+                margin: 0 auto;
+                width: 100%;
+                top: 15%;
+            } 
+        }
+        .top-nav{
+            @media screen and (max-width: 599px){
+                top: 0;
+            }
+        }
+        
+    }
+}
 #masthead{
+	background-image:url(../images/interior-top-1.jpg);
+    background-size: cover;
+	background-position: top;
+    height: 180px;
+    box-shadow: 0 0 0 30px #aaa, 0px -7px 1px 38px #222;
+    position: relative;
+    
+    @media screen and (max-width: 599px){
+        background-position: 65% 0px;
+        height: 219px;
+        background-repeat: no-repeat;
+        margin-bottom: 30px;
+     }
+      @media screen and (max-width: 599px){
+        height: 225px;
+      }
+    .top-nav{
+        background: #003559;
+        width: 224px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 11px;
+        padding: 8px 4px;
+        border: 1px solid rgb(240, 240, 240);
+        position: relative;
+        left: 73.275%;
+        top: -21%;
+        z-index: 2;
+        @media screen and (max-width: 899px){
+            width: 150px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        @media screen and (max-width: 600px){
+            top: -25px;
+        }
+
+        &:hover{
+            background:#2e81bb;
+        }
+        a{
+            color: $white;
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+    }
+    .header-bg{
+    	@include gradient(rgba(0,0,0,.3), rgba(255,255,255,0));
+        display: block;
+        height: 200px;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        @media screen and (max-width: 599px){
+            display: none;
+        }
+
+    }
 	hgroup{
 		display: flex;
     	justify-content: space-between;
+    	margin: 0 6rem 0;
+        position:relative;
+        z-index: 2;
+    	@media screen and (min-width: 600px) and (max-width: 899px){
+    		margin:0 1rem 0;
+            justify-content: space-around; 
+    	} 
+        @media screen and (max-width: 599px){
+            display: block; 
+        }
+    	
 	}
 }

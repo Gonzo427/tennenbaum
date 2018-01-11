@@ -1,0 +1,38 @@
+// Color Variables
+$white: #fff;
+$black: #414745;
+$gray: #666;
+$gray-dark: #333;
+$gray-light: #eee;
+
+// Greens
+$blue-medium: #2e81bb; 
+$blue-dark: #003559;
+
+
+// Complementary color: salmon red
+//$complement-color: adjust-hue($green-medium, 180deg);
+
+// Combine 2 formulas to create a darker complementary color
+//$complement-dark: darken(adjust-hue($green-medium, 180deg), 10%);
+
+// Combine 2 formuls to create 3 different lighter complements
+/*$complement-lighter: lighten(adjust-hue($green-medium, 180deg), 65%);
+$complement-lightest: lighten(adjust-hue($green-medium, 180deg), 85%);*/
+
+// Color Styling 
+// Content
+$body-background-color: $white;
+$body-color: $gray-light;
+$content-background-color: $white;
+ 
+// Header
+/*$site-title-color: $gray-light;
+$site-title-color-hover: $complement-light;
+$site-description-color: $gray-light;*/
+ 
+
+
+// Padding
+$sidebar-padding: 20px;
+

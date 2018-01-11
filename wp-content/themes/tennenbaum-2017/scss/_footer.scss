@@ -1,0 +1,36 @@
+footer[role="contentinfo"]{
+	border-top: 0;
+	background: #eee;
+	max-width: 100%;
+	text-align: center;
+	line-height: 1.5;
+	margin: 0;
+	padding: 10px;
+	height: 50px;
+    bottom: 0;
+    position: relative;
+    @media screen and (max-width: 599px){
+    	height: 100px;
+    	bottom: 0;
+	    z-index: 0;
+	    width: 100%;
+		span#address {
+			display: block;
+		}
+	}
+	.site-info{
+		#company-info{
+			 
+		}
+	}
+}
+.home{
+	footer[role="contentinfo"]{
+		@media screen and (max-width: 599px){
+			bottom: -139rem;
+		}
+		@media screen and (max-width: 425px){
+			bottom: -143rem;
+		}
+	}
+}
