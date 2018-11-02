@@ -1,23 +1,15 @@
 @import "_variables.scss";
 .home{
-    .menu-toggle{
-        position: relative;
-        bottom: -10rem;
-    }
     #page{
         @media screen and (max-width: 600px){
             position: relative;
-            top: 400px;
-            z-index: 5;
-            margin-bottom: 150px;
-            margin-top: 10px;
         }
-         /*@media screen and (max-width: 425px){
-            top: 2150px;
+         @media screen and (max-width: 425px){
+            //top: 30px;
          }
          @media screen and (max-width: 320px){
-            top: 2300px;
-         }*/
+            //margin: 150px 0 10px;
+         }
     }
 } 
 .col3 {

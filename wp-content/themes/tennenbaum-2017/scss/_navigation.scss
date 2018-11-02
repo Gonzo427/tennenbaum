@@ -1,19 +1,18 @@
 // Keep all of the navigation styles together to edit menus quickly
 @import "_variables.scss";
+
+.home .main-navigation ul.nav-menu.toggled-on {
+   
+    width: 70%;
+}
 /* top menu nav style */
 .main-navigation {
     margin: 0;
-     @media screen and (max-width: 800px){
-        .menu-toggle{
-            /*display: inline-block !important;*/
-        }
-     }
     .menu-toggle{
         background: $gray-light;
         border-radius: 0;
         border: 1px solid $white;
-        margin-top: -5px;
-
+        margin-top: 42px;
     }
     ul.nav-menu {
         border: {
@@ -21,10 +20,17 @@
             bottom: 0;
         }
         &.toggled-on{
-            position: relative;
+            position: absolute;
             background: $white;
             padding: 0 20px 15px;
             box-shadow: 0px 1px 5px 3px #eee;
+            transform: translate(-50%, 0px);
+            left: 50%;
+            width: 100%;
+
+            li{
+                width: 100%;
+            }
         }
         li{
             transition: all .2s ease-in;
@@ -34,7 +40,7 @@
                     background: $white;
                     color: $blue-dark;
                     display: none;
-                    width: 14rem;
+                    width: 17rem;
                 }
                 &:after{
                     content: '|';
@@ -115,8 +121,15 @@
                 }
             } 
         }
+        //remove sub-menu top level li bullets
+        li#menu-item-141 > a:before, li#menu-item-136 > a:before, li#menu-item-138 > a:before, {
+            @media screen and (max-width: 599px){
+                        display: none;
+                    }
+        }
         ul li a{
             border-bottom: 0;
+            @media screen and (max-width: 599px){text-transform: capitalize;}
         }
         
         .current-menu-item > a,  .current_page_item > a{

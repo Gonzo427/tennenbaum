@@ -5,7 +5,7 @@
     max-width: 2500px;
     height: 100vh;
     @media screen and (max-width: 599px){
-	    height: 400px;
+	    height: 600px;
 	    position: relative;
 	}
 	.homeSlide{
@@ -27,15 +27,11 @@
 	    }
 	   
 	    @media screen and (max-width: 599px){
-	    	height: 450px;
-	    	//position: relative;
-    		margin-bottom: 30%;
-    		z-index: 1;
-	    	/*&#slide-1{
-	    		background-position: 100%;
-    			top: -64px;
+    		height: 300px;
+	    	&#slide-1{
+	    		background-position: 55% -190px;
 	    	}
-	    	&#slide-2{
+	    	/*&#slide-2{
 	    		top: 30%;
 	    	}
 	    	&#slide-3{
@@ -56,7 +52,7 @@
 	    		top: 38rem;
 	    	}
 	    }
-	    @media screen and (max-width: 360px){
+	    @media screen and (max-width: 330px){
 	    	&#slide-2{
 	    		top: 16rem;
 	    	}
@@ -68,7 +64,7 @@
 	    	}
 	    }*/
 	    .textOverlay{
-	    	background: rgba(100,100,100, 0.7);
+	    	background: rgba(100,100,100, 0.6);
 		    position: relative;
 		    top: 35%;
 		    padding: 60px 30px; 
@@ -82,18 +78,23 @@
 		    height: 50%;
 		    display: flex;
 		    align-items: center;
+		    @media screen and (max-width: 699px){
+		    	width: 90%;
+		    	background: rgba(100,100,100, 0.5);
+		    }
 
 		     @media screen and (max-width: 599px){
 		     	top: 100%;
 		     	width: 100%;
 		     	padding: 5% 6%;
-		     	height: 400px;
+		     	height: 300px;
 		     	box-sizing: border-box;
-		    
-		     	/*&#text-1{
-		     		z-index: 1;
-		     		top: 400px;
-		     	}
+		     }
+		     @media screen and (max-width: 330px){
+		     	letter-spacing: 0.05rem;
+		     	font-size: 1.25rem;
+		     }
+		     	/*
 		     	&#text-2{
 		     		z-index: 1;
 		     		top: 315px;
@@ -107,7 +108,7 @@
 		     		top: 315px;
 		     	}*/ 
 
-		     }
+		    
 		    p{
 		    	font-weight: 100;
 		    	.blue{
